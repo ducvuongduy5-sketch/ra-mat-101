@@ -1,0 +1,48 @@
+/* Botanical studio: forest, ivory, sage and rose. */
+:root{--forest:#245447;--sage:#dce8d4;--rose:#edc1cc}
+.hero h1 em{color:inherit;font-style:normal}
+.hero .eyebrow{color:var(--forest);font-size:10px;letter-spacing:1px}
+.hero-art{padding-left:0}
+.art-arch{background:#e9f0e6;border:1px solid #d1ddca;border-radius:260px 260px 20px 20px}
+.art-label{top:6%;color:#45654f;font-size:11px;letter-spacing:.5px}
+.art-label b{font-size:17px}
+.rose-garden{width:100%;height:auto}
+.rose-garden .bouquet{transform-origin:300px 550px!important;animation:bouquet-sway 8s ease-in-out infinite!important}
+.rose-head{animation:rose-open 1.8s cubic-bezier(.16,1,.3,1) both!important;animation-delay:var(--flower-delay,0ms)!important}
+.garden-offscreen .bouquet,.garden-offscreen .rose-head{animation-play-state:paused!important}
+.tab-hidden .rose-garden .bouquet,.tab-hidden .rose-garden .rose-head{animation-play-state:paused!important}
+.floating-note{background:#fbfdf7;border:1px solid #dce6d6;box-shadow:0 15px 40px #254f4010;left:-10px;bottom:55px;transform:rotate(-3deg)}
+.floating-note .leaf-icon{width:25px;height:32px}
+.bloom-button{top:auto;bottom:115px;right:-5px;background:#245447;color:#f6f9ef;border-color:#245447;transform:rotate(4deg)}
+.bloom-button .leaf-icon{display:block;width:30px;height:35px;margin:0 auto 5px}
+.art-index{letter-spacing:.6px;font-size:10px}
+.leaf-icon{width:22px;height:26px;vertical-align:middle;flex-shrink:0}
+.ribbon{background:#e3eddc;color:#365741;border-block:1px solid #d2dfcb;letter-spacing:1.2px}
+.ribbon .leaf-icon{width:18px;height:23px}
+.personas{gap:22px}
+.persona{padding:12px 12px 22px;background:transparent;border:1px solid transparent;border-radius:20px;position:relative;min-height:0}
+.persona .portrait{width:100%;height:auto;aspect-ratio:240/270;margin:0 0 18px;background:none;border-radius:15px;overflow:hidden}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.persona .number{position:absolute;z-index:1;top:26px;right:25px;float:none;background:#f9fcf2d9;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;font-size:9px}
+.persona b,.persona small{padding-inline:8px}
+.persona b{font-size:21px;line-height:1.3}
+.persona[aria-pressed=true]{border-color:#7a9c80;background:#f8fbf4;box-shadow:none}
+.persona[aria-pressed=true] .portrait{transform:none}
+.persona:hover .portrait img{transform:scale(1.025)}
+.practice-panel{border-radius:14px;border-color:#cdddc7}
+.price-card{border-radius:12px}.price-card.featured{background:#f4f8ef;border-width:2px}
+.button{border-radius:7px}
+.ritual .button:hover{background:#f4d4dd}
+.back-three .leaf-icon{width:80px;height:105px;margin:20px auto;color:#ecd4d8}
+.contact-flower{left:5%;top:15%;opacity:.1;width:260px;height:320px}
+.contact-flower .leaf-icon{width:100%;height:100%}
+.contact .fine-print{color:#dfebd8}
+.signature .leaf-icon{width:26px;height:32px;margin-left:10px}
+.paper{background:#fafcf5}.paper::before{border-color:#d6e0cc}
+.takeaway{background:#e9efdf}.contact{background:#245447}
+.brand .brand-mark{width:44px;height:49px}.brand:hover .brand-mark{transform:none}
+@keyframes rose-open{from{opacity:0;transform:scale(.18) rotate(-24deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes bouquet-sway{0%,100%{transform:rotate(-.8deg)}50%{transform:rotate(.8deg)}}
+.motion-paused .rose-garden .bouquet,.motion-paused .rose-head{animation:none!important;opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rose-garden .bouquet,.rose-head{animation:none!important;opacity:1;transform:none}.portrait img{transition:none}.persona:hover .portrait img{transform:none}}
+@media(max-width:720px){.hero-art{padding:8px 12px 30px}.art-label{font-size:9px}.art-label b{font-size:14px}.floating-note{bottom:50px;left:0;max-width:270px;padding:13px}.floating-note p{font-size:12px}.floating-note small{font-size:8px}.floating-note .leaf-icon{width:19px}.bloom-button{width:70px;height:70px;bottom:105px;right:0}.bloom-button .leaf-icon{width:24px;height:27px}.bloom-button span{font-size:7px}.personas{gap:14px 8px}.persona{padding:7px 7px 14px;border-radius:13px}.persona .portrait{border-radius:10px;margin-bottom:12px}.persona b{font-size:17px;padding-inline:2px}.persona small{padding-inline:2px;font-size:10px}.persona .number{top:15px;right:15px;width:23px;height:23px;font-size:8px}.brand .brand-mark{width:32px;height:38px}.contact-flower{width:170px;height:220px;left:-40px}}

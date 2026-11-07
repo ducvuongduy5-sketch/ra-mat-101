@@ -18,3 +18,7 @@ Form mở ứng dụng email hoặc tải TXT; chưa có backend nhận lịch/t
 Minh họa SVG và mã giao diện được viết riêng. Cảm hứng tương tác hoa: https://github.com/IdeaToCodee/flowers-20-10 (không sao chép mã ứng dụng). Font Noto có giấy phép trong assets/fonts/LICENSE.txt. Chưa cấp giấy phép tái sử dụng cho mã website.
 
 Đã kiểm tra desktop/mobile, form tư vấn, rút bài, checklist và reduced motion. GitHub Pages phục vụ main tại thư mục gốc.
+
+## Bản thiết kế botanical
+Bảng màu xanh rừng, ngà sáng, sage và hồng phấn. Bó hoa SVG 7 hoa hồng nhiều lớp cánh, chân dung phụ huynh SVG riêng và logo hai người dưới mái vòm. Tham khảo chuyển động hoa từ IdeaToCodee/flowers-20-10; minh họa và mã mới được viết riêng. Áp dụng hướng dẫn thiết kế từ https://github.com/anthropics/skills/tree/main/skills/frontend-design . Animation nở có thể phát lại, tạm dừng khi ngoài màn hình và tuân theo reduced motion.
+
